@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://fiddle.jshell.net/Rg9sG/1/show/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-start{clip:rect(0,auto,auto,0);-ms-zoom:1.0001;}.ng-animate-active{clip:rect(-1px,auto,auto,0);-ms-zoom:1;}</style>
+  
+  <title> - jsFiddle demo</title>
+  
+  <script type="text/javascript" src="angular.js"></script><style type="text/css"></style>
+  
+  <link rel="stylesheet" type="text/css" href="normalize(1).css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+  <style type="text/css">
+    
+  </style>
+  
+</head>
+<body>
+  <div ng-app="app" ng-controller="MainCtrl" class="ng-scope">
+    <input name="widget.title" ng-value="widget.title" value="foo">
+    <button ng-click="set(&#39;foo&#39;)">set to foo</button>
+</div>
+
+  
+
+
+<script type="text/javascript">//<![CDATA[ 
+
+angular.module('app', [])
+    .controller('MainCtrl', function($scope) {
+        $scope.widget = {title: 'abc'};
+        
+        $scope.set = function(new_title) {
+            this.widget.title = new_title;
+        }
+    });
+//]]>  
+
+</script>
+
+
+
+
+
+
+
+</body></html>
